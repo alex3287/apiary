@@ -117,9 +117,13 @@ img {
           justify-content: space-between;
 }
 
+.hero-image {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  opacity: 0.4;
+}
+
 .hero-text {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
   padding-right: 100px;
 }
 
@@ -129,6 +133,7 @@ img {
   font-weight: 800;
   line-height: 55px;
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .hero-text__subtitle {
