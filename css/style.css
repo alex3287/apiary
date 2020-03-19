@@ -41,6 +41,13 @@ img {
   display: block;
 }
 
+.input {
+  border: 1px solid #dddddd;
+  padding: 20px 26px;
+  font-style: 15px;
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -270,5 +277,19 @@ img {
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
 }
 /*# sourceMappingURL=style.css.map */
