@@ -1,0 +1,25 @@
+.slogan
+    background-color: darken($main-color, 5%)
+    &-block
+        display: flex
+        justify-content: center
+        &__text
+            display: inline-block
+            font-size: 32px
+            font-weight: 400
+            line-height: 50px
+            margin: auto
+            text-align: center
+@media screen and ( max-width: 768px )
+    .slogan
+        &-block
+            &__text
+                font-size: 24px
+                line-height: 40px
+@media screen and ( max-width: 588px )
+    .slogan
+        &-block
+            &__text
+                font-size: 18px
+                line-height: 30px
+    
