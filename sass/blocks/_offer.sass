@@ -1,0 +1,52 @@
+.offer
+    &-block
+        width: 50%
+        padding-right: 90px
+    &__title
+        max-width: 360px
+        line-height: 35px
+        margin-bottom: 24px
+    &__subtitle
+        max-width: 250px
+        margin-bottom: 30px
+    &__input
+        margin-bottom: 30px
+        width: 240px
+        &:first-child
+            margin-right: 10px
+    &__button
+        width: 100%
+        min-height: 70px
+@media screen and ( max-width: 1200px )
+    .offer
+        &__title
+            max-width: 560px
+            line-height: 35px
+            margin-bottom: 24px
+        &-block
+            width: 100%
+            display: flex
+            justify-content: center
+            flex-direction: column
+            padding-left: 50px
+            padding-right: 0
+        &__button
+            max-width: 500px
+        
+@media screen and ( max-width: 768px )
+    .offer
+        &__title
+            max-width: 350px
+            line-height: 35px
+            margin-bottom: 24px
+        &-block
+            width: 90%
+            display: flex
+            justify-content: center
+        &__button
+            max-width: 500px
+        // &__input
+        //     margin-bottom: 30px
+        //     width: 240px
+        //     &:first-child
+        //         margin-right: 60px

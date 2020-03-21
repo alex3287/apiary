@@ -1,0 +1,38 @@
+*
+    box-sizing: border-box
+body
+    font-family: sans-serif
+img
+    max-width: 100%
+.container
+    width: 1170px
+    margin: auto
+.button
+    border-radius: 10px
+    background-color: $main-color
+    border: none
+    padding: 18px 30px
+    &:hover
+        background-color: lighten($main-color, 15%)
+        cursor: pointer
+.section
+    padding: 90px 0
+    &-title
+        font-size: 24px
+    &-subtitle
+        font-size: 16px
+        display: block
+.input
+    border: 1px solid $border-input
+    padding: 20px 26px
+    font-style: 15px
+    border-radius: 10px
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+        width: 95%
+
+@media (max-width: 768px)
+    .container
+        max-width: 750px
+        width: 95%    
