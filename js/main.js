@@ -7,6 +7,7 @@ button.addEventListener('click', function(){
 });
 
 modal.addEventListener('click', function(){
-    modal.classList.remove('modal_active');
+    modal.classList.remove
+    ('modal_active');
 });
 
