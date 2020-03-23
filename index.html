@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="stylesheet" href="./css/slick.css">
     <title>Пасека Сибири</title>
 </head>
 <body>
@@ -113,6 +113,26 @@
         <!-- /.container -->
       </section>
       <!-- /.offer -->
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах
+            </h2>
+          <div class="slider">
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-1.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-2.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slider-3.jpg" alt=""></div>
+          </div>  
+          <div class="arrows portfolio__arrows">
+            <div class="arrows__left"><img src="./img/portfolio/left-arrow.png" alt=""></div>
+            <div class="arrows__right"><img src="./img/portfolio/right-arrow.png" alt=""></div>
+          </div>
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.section portfolio -->
       <section class="slogan section">
         <div class="container">
           <div class="slogan-block"><span class="slogan-block__text">
@@ -141,5 +161,34 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- Script открытия и закрытия модального окна на jQuery  -->
     <script src="js/modal.js"></script>
+    <!-- подключение библиотеки Slic для слайдера -->
+    <script src="js/slick.min.js"></script>
+    <!-- реализация слайдера -->
+    <script> 
+      $(document).ready(function(){
+        $('.slider').slick({
+          slidesToShow: 3,
+          slidesToScrol: 1,
+          prevArrow: $('.arrows__left'),
+          nextArrow: $('.arrows__right'),
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScrol: 1,
+              }
+            },
+            {
+              breakpoint: 778,
+              settings: {
+                slidesToShow: 1,
+                slidesToScrol: 1,
+              }
+            }
+          ]
+        });
+      });
+    </script>
 </body>
 </html>
