@@ -37,4 +37,22 @@
             margin-bottom: 58px
         &-block
             display: flex
-            justify-content: center
+            // justify-content: center
+
+@media screen and ( max-width: 1200px)
+    .step
+        margin-bottom: 50%
+        flex-basis: content
+        &:after
+            display: none  
+        &s
+            &-block
+                justify-content: center
+@media screen and ( max-width: 768px)
+    .step
+        &:after
+            display: none  
+        &s
+            &-block
+                flex-direction: column
+                align-items: center
