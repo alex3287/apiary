@@ -9,7 +9,7 @@
       position: absolute
       background: url('../img/steps/arrow.png') no-repeat center
       top: -10px
-      right: 5px
+      right: -5%
     &:last-child
         &:after
             display: none
@@ -21,12 +21,13 @@
         justify-content: center
         align-items: center
         border-radius: 50%
-        margin: auto 30px
+        margin: auto
         margin-bottom: 30px
     &__text
         font-size: 14px
         max-width: 160px
         text-align: center
+        margin: auto
         margin-bottom: 98px
     &s
         &__title
@@ -37,17 +38,16 @@
             margin-bottom: 58px
         &-block
             display: flex
-            // justify-content: center
-
 @media screen and ( max-width: 1200px)
     .step
-        margin-bottom: 50%
-        flex-basis: content
+        flex-basis: 50%
         &:after
             display: none  
         &s
             &-block
                 justify-content: center
+                align-items: center
+                flex-wrap: wrap
 @media screen and ( max-width: 768px)
     .step
         &:after

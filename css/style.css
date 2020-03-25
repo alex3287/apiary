@@ -603,7 +603,7 @@ img {
   position: absolute;
   background: url("../img/steps/arrow.png") no-repeat center;
   top: -10px;
-  right: 5px;
+  right: -5%;
 }
 
 .step:last-child:after {
@@ -624,7 +624,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
-  margin: auto 30px;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -632,6 +632,7 @@ img {
   font-size: 14px;
   max-width: 160px;
   text-align: center;
+  margin: auto;
   margin-bottom: 98px;
 }
 
@@ -649,14 +650,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (max-width: 1200px) {
   .step {
-    margin-bottom: 30px;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
   }
@@ -667,6 +664,11 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
