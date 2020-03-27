@@ -686,4 +686,32 @@ img {
             align-items: center;
   }
 }
+
+.card {
+  width: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card__text {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+}
 /*# sourceMappingURL=style.css.map */
