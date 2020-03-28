@@ -14,7 +14,8 @@
         "../sass/blocks/_portfolio.sass",
         "../sass/blocks/_price.sass",
         "../sass/blocks/_steps.sass",
-        "../sass/blocks/_warranty.sass"
+        "../sass/blocks/_warranty.sass",
+        "../sass/blocks/_brif.sass"
     ],
     "names": [],
     "file": "style.css"
