@@ -66,6 +66,10 @@ img {
     max-width: 750px;
     width: 95%;
   }
+  .section {
+    padding-top: 60px;
+    border-bottom: 60px;
+  }
 }
 
 .navbar {
@@ -906,5 +910,57 @@ img {
   font-size: 16px;
   display: block;
   margin-bottom: 95px;
+}
+
+.form__description {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .brif__form {
+    padding-left: 30px;
+  }
+  .brif .interview {
+    padding-right: 30px;
+  }
+  .brif .interview__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .brif .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .brif .interview-list__text {
+    font-size: 14px;
+    max-width: 300px;
+  }
+  .brif .interview-list__counter {
+    margin-right: 20px;
+  }
+  .brif .form__title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .brif .form__subtitle {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .brif {
+    background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+    background-position: top center, center bottom;
+    background-size: 100% 50%, cover;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brif-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brif__form {
+    margin-top: 80px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
