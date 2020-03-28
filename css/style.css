@@ -804,4 +804,77 @@ img {
     margin-top: 20px;
   }
 }
+
+.brif {
+  background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+  background-position: left center, center right;
+  background-size: 50%, contain;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brif-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brif__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brif .interview {
+  padding-right: 70px;
+}
+
+.brif .interview__title {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 33px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.brif .interview__subtitle {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 95px;
+}
+
+.brif .interview-list {
+  list-style: none;
+  padding: 0;
+}
+
+.brif .interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.brif .interview-list__counter {
+  display: inline-block;
+  text-align: center;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #333333;
+  border-radius: 50%;
+  margin-right: 30px;
+  font-size: 14px;
+}
+
+.brif .interview-list__text {
+  max-width: 400px;
+}
 /*# sourceMappingURL=style.css.map */
