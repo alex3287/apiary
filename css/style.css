@@ -72,6 +72,10 @@ img {
   }
 }
 
+.error {
+  border: 1px solid red;
+}
+
 .navbar {
   padding: 8px 0;
 }
