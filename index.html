@@ -476,7 +476,15 @@
     <div class="modal" id="modal">
       <div class="modal-dialog">
         <button class="modal-dialog__close" id="close">&times;</button>
-        <h4 class="modal-dialog__title">Всплывающее окно</h4>
+        <div class="formmodal__form">
+          <h4 class="modal__title">Заполните форму</h4>
+          <span class="modal__subtitle">Мы вам перезвоним в течении дня</span>
+          <form action="#" id="modal-form">
+            <input type="text" class="input modal__input" name="username" placeholder="Ваше имя">
+            <input type="text" class="input modal__input phone" name="phone" placeholder="Ваш телефон">
+            <button class="button modal__button">Отправить заявку</button>
+          </form>
+        </div>
       </div>
       <!-- /.modal-dialog -->
     </div>
@@ -503,6 +511,27 @@
       $(document).ready(function(){
         // Валидация форм
         $('#brif-form').validate({
+          rules: {
+            username: {
+              required: true,
+              minlength: 2 
+              },
+            phone: {
+              required: true
+              }
+          },
+          messages: {
+            username: {
+              required: "Введите ваше имя",
+              minlength: jQuery.validator.format("Количество символов которые нужно ввести: {0}")
+            },
+            phone:{
+              required: "Укажите телефон"
+            }
+          }
+        });
+        // Валидация модального окна
+        $('#modal-form').validate({
           rules: {
             username: {
               required: true,
